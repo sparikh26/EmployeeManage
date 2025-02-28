@@ -1,5 +1,11 @@
 package com.System.Employee.Management.controller;
 
+import com.System.Employee.Management.entity.Department;
+import com.System.Employee.Management.service.DepartmentService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
 @RestController
 @RequestMapping("/departments")
 public class DepartmentController {

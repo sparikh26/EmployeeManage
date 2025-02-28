@@ -1,5 +1,11 @@
 package com.System.Employee.Management.service;
 
+import com.System.Employee.Management.entity.Department;
+import com.System.Employee.Management.repositories.DepartmentRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
 
@@ -28,7 +34,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     @Override
     public Department updateDepartment(Long id, Department department) {
         Department existingDepartment = getDepartmentById(id);
-        existingDepartment.setName(department.getName());
+        existingDepartment.setDep_name(department.getDep_name());
         return departmentRepository.save(existingDepartment);
     }
 

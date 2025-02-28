@@ -11,7 +11,7 @@ public class Employee {
     @Id()
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull(message = "")
-    private Long EmpId;
+    private Long id;
 
     public String getName() {
         return name;
@@ -21,12 +21,12 @@ public class Employee {
         this.name = name;
     }
 
-    public Long getEmpId() {
-        return EmpId;
+    public Long getId() {
+        return id;
     }
 
-    public void setEmpId(Long empId) {
-        EmpId = empId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getEmail() {
